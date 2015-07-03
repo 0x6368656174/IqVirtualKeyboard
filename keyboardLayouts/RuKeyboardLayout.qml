@@ -212,7 +212,7 @@ Item {
             shiftValue: "Shift"
             width: 105
             checkable: true
-            iconName: "arrowUp"
+            iconName: "arrow-up"
             iconPosition: "left"
             textHeightPrc: 0.3
         }
@@ -253,7 +253,7 @@ Item {
             shiftValue: "Shift"
             width: 130
             checkable: true
-            iconName: "arrowUp"
+            iconName: "arrow-up"
             iconPosition: "left"
             textHeightPrc: 0.3
         }
