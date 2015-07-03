@@ -3,6 +3,8 @@ import QtQuick.Controls 1.3
 import "keyboardLayouts"
 
 Item {
+    property bool sizeChangedEnable: true
+
     property TextField textField
     property Item contentItem
 
@@ -140,11 +142,15 @@ Item {
                 }
             }
             onPressed: {
+                if (!keyboard.sizeChangedEnable)
+                    return
                 titleRect.anchors.bottom = undefined
                 if (titleRect.anchors.bottomMargin > 10)
                     keyboardItem.anchors.bottom = keyboardItem.parent.bottom
             }
             onReleased: {
+                if (!keyboard.sizeChangedEnable)
+                    return
                 anchorsAnimation.enabled = false
                 titleRect.anchors.bottomMargin = keyboard.height - titleRect.y - titleRect.height
                 titleRect.anchors.bottom = keyboard.bottom
@@ -176,6 +182,8 @@ Item {
 
     function processClicked(key) {
         privateData.shift = false
+        if (textField.readOnly)
+            return
         removeSelected()
         textField.insert(textField.cursorPosition, key)
     }
@@ -200,11 +208,13 @@ Item {
             textField.cursorPosition++
             break
         case "tab" :
-//            removeSelected()
-//            textField.insert(textField.cursorPosition, "\t")
+            //            removeSelected()
+            //            textField.insert(textField.cursorPosition, "\t")
             textField.nextItemInFocusChain().forceActiveFocus()
             break
         case "backspace" :
+            if (textField.readOnly)
+                return
             var cursorPosition = 0
             var str = ""
             var newStr = ""
@@ -222,15 +232,23 @@ Item {
             textField.copy()
             break
         case "cut" :
+            if (textField.readOnly)
+                return
             textField.cut()
             break
         case "paste" :
+            if (textField.readOnly)
+                return
             textField.paste()
             break
         case "undo" :
+            if (textField.readOnly)
+                return
             textField.undo()
             break
         case "redo" :
+            if (textField.readOnly)
+                return
             textField.redo()
             break
         case "enter" :

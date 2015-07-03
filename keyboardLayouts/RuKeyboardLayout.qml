@@ -84,7 +84,7 @@ Item {
             shiftValue: "Backspace"
             width: 95
             backgroundColor: "#1C1C1C"
-            iconName: "longArrowLeft"
+            iconName: "long-arrow-left"
             iconPosition: "bottom"
             textHeightPrc: 0.3
         }
@@ -332,7 +332,7 @@ Item {
             shiftValue: "Left"
             width: 60
             backgroundColor: "#1C1C1C"
-            iconName: "longArrowLeft"
+            iconName: "long-arrow-left"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
