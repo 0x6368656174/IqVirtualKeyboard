@@ -1,3 +1,22 @@
+/**********************************************************************************
+ * Copyright © 2015 Pavel A. Puchkov                                              *
+ *                                                                                *
+ * This file is part of IqVirtualKeyboard.                                        *
+ *                                                                                *
+ * IqVirtualKeyboard is free software: you can redistribute it and/or modify      *
+ * it under the terms of the GNU Lesser General Public License as published by    *
+ * the Free Software Foundation, either version 3 of the License, or              *
+ * (at your option) any later version.                                            *
+ *                                                                                *
+ * IqVirtualKeyboard is distributed in the hope that it will be useful,           *
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of                 *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                  *
+ * GNU Lesser General Public License for more details.                            *
+ *                                                                                *
+ * You should have received a copy of the GNU Lesser General Public License       *
+ * along with IqVirtualKeyboard.  If not, see <http://www.gnu.org/licenses/>.     *
+ **********************************************************************************/
+
 import QtQuick 2.4
 
 Item {
@@ -85,7 +104,7 @@ Item {
             shiftValue: "Backspace"
             width: 95
             backgroundColor: "#1C1C1C"
-            iconName: "long-arrow-left"
+            iconName: "fa-long-arrow-left"
             iconPosition: "bottom"
             textHeightPrc: 0.3
         }
@@ -101,7 +120,7 @@ Item {
             shiftValue: "Tab"
             width: 55
             backgroundColor: "#1C1C1C"
-            iconName: "exchange"
+            iconName: "fa-exchange"
             iconPosition: "left"
             textHeightPrc: 0.3
         }
@@ -217,7 +236,7 @@ Item {
             shiftValue: "Shift"
             width: 105
             checkable: true
-            iconName: "arrow-up"
+            iconName: "fa-arrow-up"
             iconPosition: "left"
             textHeightPrc: 0.3
         }
@@ -260,7 +279,7 @@ Item {
             shiftValue: "Shift"
             width: 130
             checkable: true
-            iconName: "arrow-up"
+            iconName: "fa-arrow-up"
             iconPosition: "left"
             textHeightPrc: 0.3
         }
@@ -274,7 +293,7 @@ Item {
             value: "Copy"
             shiftValue: "Copy"
             backgroundColor: "#1C1C1C"
-            iconName: "copy"
+            iconName: "fa-copy"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
@@ -283,7 +302,7 @@ Item {
             value: "Cut"
             shiftValue: "Cut"
             backgroundColor: "#1C1C1C"
-            iconName: "cut"
+            iconName: "fa-cut"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
@@ -292,14 +311,14 @@ Item {
             value: "Paste"
             shiftValue: "Paste"
             backgroundColor: "#1C1C1C"
-            iconName: "paste"
+            iconName: "fa-paste"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
         ListElement {
             name: "layout"
             backgroundColor: "#1C1C1C"
-            iconName: "globe"
+            iconName: "fa-globe"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
@@ -311,7 +330,7 @@ Item {
         ListElement {
             name: "layout"
             backgroundColor: "#1C1C1C"
-            iconName: "globe"
+            iconName: "fa-globe"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
@@ -320,7 +339,7 @@ Item {
             value: "Undo"
             shiftValue: "Undo"
             backgroundColor: "#1C1C1C"
-            iconName: "undo"
+            iconName: "fa-undo"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
@@ -329,7 +348,7 @@ Item {
             value: "Redo"
             shiftValue: "Redo"
             backgroundColor: "#1C1C1C"
-            iconName: "repeat"
+            iconName: "fa-repeat"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
@@ -339,7 +358,7 @@ Item {
             shiftValue: "Left"
             width: 60
             backgroundColor: "#1C1C1C"
-            iconName: "long-arrow-left"
+            iconName: "fa-long-arrow-left"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
@@ -349,7 +368,7 @@ Item {
             shiftValue: "Right"
             width: 60
             backgroundColor: "#1C1C1C"
-            iconName: "longArrowRight"
+            iconName: "fa-long-arrow-right"
             iconPosition: "top"
             textHeightPrc: 0.3
         }
