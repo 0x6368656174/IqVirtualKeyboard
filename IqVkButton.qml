@@ -20,7 +20,7 @@
 import QtQuick 2.4
 import QtQuick.Controls 1.3 as QtControls
 import QtQuick.Controls.Styles 1.3 as QtControlsStyles
-import "FontAwesomeGetChar"
+import "FontAwesomeChars"
 
 QtControls.Button {
     id: button
@@ -109,7 +109,7 @@ QtControls.Button {
                 font.pixelSize: parent.height * textHeightPrc
                 font.family: "FontAwesome"
                 color: buttonStyle.labelColor
-                text: FontAwesomeGetChar.getChar(iconName)
+                text: FontAwesomeChars.getChar(iconName)
             }
         }
         label: Item {
