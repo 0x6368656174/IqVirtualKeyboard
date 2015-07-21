@@ -1,6 +1,9 @@
 # IqVirtualKeyboard
 Simle virtual keyboard for Qt.
 
+![Image of IqVirtualKeyboard]
+(http://itquasar.ru/github_images/IqVirtualKeyboard.png)
+
 ## Install
 In project folder run command:
 ~~~~~~{.sh}
